@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Guilherme Gomes Branco Bravo">
+    <meta name="keywords" content="MapeandoSP, Cidade, História">
+    <meta name="description" content="Página voltada para mapear as cidades de São Paulo">
+    <link rel="shortcut icon" href="/img/tree-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Cadastre sua cidade</title>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="/img/Logo-Site.png" alt="Logo Mapeando Sp">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Nosso Projeto</a></li>
+                <li><a href="cidades.html">Cidades Mapeadas</a></li>
+                <li><a href="formulario.html">Cadastre sua cidade</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form name="meuForm" method="post" id="formulario">
+            <div class="box">
+                <h1 id="titulo-form">Cadastre sua cidade</h1>
+
+                <label>
+                    <span>Nome Completo</span>
+                    <input type="text" class="input_text" name="nome" id="name" required/>
+                </label>
+
+                <label>
+                    <span>E-mail</span>
+                    <input type="email" class="input_text" name="email" id="email" required/>
+                </label>
+
+                <label>
+                    <span>Nome da cidade</span>
+                    <input type="text" class="input_text" name="assunto" id="subject" required/>
+                </label>
+                
+
+                <label>
+                    <span>Conte um pouco sobre sua cidade</span>
+                    <textarea class="message" name="feedback" id="feedback" required></textarea>
+                    <button type="submit" class="button">
+                        Enviar
+                    </button>
+                </label>
+
+            </div>
+        </form>
+
+    </main>
+</body>
+
+</html>

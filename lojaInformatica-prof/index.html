@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--Parte de configuração do site-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Guilherme Gomes">
+    <meta name="description" content="Loja de Informática - Guilherme Gomes">
+    <meta name="keywords" content="Informática, Loja, Computadores">
+
+    <!--Faz o site atualizar a cada x segundos sozinhos-->
+    <meta http-equiv="refresh" content="60">
+
+    <!--Colocando o favicon-->
+    <link rel="shortcut icon" href="/images/iconi(fav).jpeg" type="image/x-icon">
+
+    <!--Criando um link para o css externo-->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Loja de Informática - Guilherme</title>
+    <script src="https://kit.fontawesome.com/7dcd6419da.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+
+<!--Criando um cabeçalho-->
+<header class="cabecalho">
+    <!--Marcação semantica para o corpo do cabeçalho-->
+    <h1 class="logo">
+        <a href="index.html" title="Loja de Informática - Guilherme">Loja de Informática - Profesor Obama</a>
+    </h1>
+    <form action="menu_central.html" method="get">
+        <input type="text" name="pesquisa" id="pesquisa" placeholder="Faça sua pesquisa aqui">
+        <button><i class="fas fa-search"></i></button>
+    </form>
+</header>
+
+<!-- CRIANDO O MENU -->
+<nav class="menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+    <!-- COLOCANDO AS REDES SOCIAIS -->
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-square fa-lg"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#"><i class="fas fa-envelope fa-lg"></i></a>
+        <a href="#"><i class="fab fa-google fa-lg"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+    </div>
+</nav>
+
+<main class="principal">
+    <article class="sobre"> <!--Essa teg vem de artigo-->
+        <h2>Sobre nós</h2>
+        <!-- srcset é para  -->
+        <img src="/images/loja.jpeg" alt="Loja de Informática - Guilherme ">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore nemo sapiente modi at aliquam ipsum
+            voluptatem molestias repellendus voluptas facilis sit explicabo, vel vero nobis officia est, qui
+            temporibus provident.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore nemo sapiente modi at aliquam ipsum
+            voluptatem molestias repellendus voluptas facilis sit explicabo, vel vero nobis officia est, qui
+            temporibus provident
+
+            Tempore nemo sapiente modi at aliquam ipsum voluptatem molestias repellendus voluptas facilis sit
+            explicabo, vel vero nobis officia est, qui temporibus providentLorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Tempore nemo sapiente modi at aliquam ipsum voluptatem molestias repellendus voluptas
+            facilis sit explicabo, vel vero nobis officia est, qui temporibus provident</p>
+    </article>
+    <!-- Menu lateral  -->
+    <aside class="onde-estamos">
+        <h2>Onde estamos:</h2>
+        <p>Rua Pequetita, 111 Vila Olímpia, São Paulo CEP-04552-060</p>
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.3345933961873!2d-46.6850891!3d-23.592330300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57467938e36d%3A0x3f95b7ce9ca78b42!2sR.%20Pequetita%2C%20111%20-%20Vila%20Ol%C3%ADmpia%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004552-060!5e0!3m2!1spt-BR!2sbr!4v1628880589763!5m2!1spt-BR!2sbr"></iframe></p>
+        <h2>Contatos:</h2>
+        <ul>
+            <li><i class="fas fa-phone-volume fa-lg"></i>1138334000</li>
+            <li><i class="fas fa-mobile-alt fa-lg"></i>988521708</li>
+            <li><i class="fas fa-envelope fa-lg"></i>contato@proa.org.br</li>
+        </ul>
+    </aside>
+</main>
+    <section class="newsletter">
+        <h3>Newsletter</h3>
+        <p>Receba nossas promoções por e-mail.</p>
+        <form action="#" method="post">
+            <input type="text" nome="nome" id="nome"  placeholder="Digite o seu nome:">
+            <input type="email" name="email" id="email" placeholder="Digite o seu e-mail">
+            <button type="button">Cadastrar</button>
+        </form>
+    </section>
+    <footer class="rodape">
+        <p>&copy;Loja de Informática do Guilherme - Todos os direitos reservados</p>
+    </footer>
+</body>
+
+</html>

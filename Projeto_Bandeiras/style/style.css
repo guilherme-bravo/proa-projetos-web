@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+li,
+a,
+button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background-color: whitesmoke;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10;
+    background-color: lightblue;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+.nav-links li a {
+    transition: all 0.4 ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #2eac2e;
+}
+
+.titulo-png{
+    text-align: center;
+    color: #249124;
+    margin: 20px;
+    text-decoration: underline;
+}
+
+#ft-sp{
+    float: left;
+    width: 450px;
+    margin: 0 15px 10px 0;
+    border-radius: 3px;
+}
+
+.text-aling{
+    text-align: justify;
+    font-family: 5px;
+    padding: 3px;
+}
+
+
+/* FLEX BOX */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.item{
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 30px;
+    
+    
+}
+.item :hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.item img{
+    width: 500px;
+    padding: 5px;
+    border-radius: 10px;
+    height: 300px;
+    
+    
+}
+.item p{
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.item h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+/* BOTAO */
+.item button{
+    border: none;
+    width: 190px;
+    padding: 10px;
+    border-radius: 4px;
+    outline: none;
+    background-color: white;
+    transition: ease-out 0.3s;
+    border: 3px solid lightblue;
+    position: relative;
+    z-index: 1;
+
+    
+}
+.item button :hover{
+   color: black;
+   cursor: pointer;
+}
+
+.item button:before{
+    transition: 0.5 all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color:lightblue;
+}
+
+.item button:hover:before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.pg-individual img{
+   width: 600px;
+}
+.pg-individual{
+    text-align: center;
+    font-size: 20px;
+    margin: 30px;
+}
+.pg-individual p, h2{
+    padding: 10px;
+    justify-content: right;
+}
+
+/* PARTE DO FORMULARIO */
+form,input,select,textarea{margin:0; padding:0; color:#ffffff;}
+
+#titulo-form{
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+div.box {
+    margin:0 auto;
+    width: 700px;
+    background: #94cadc;
+    position:relative;
+    top:50px;
+    border:1px solid #262626;
+}
+
+
+
+
+div.box label {
+    width:100%;
+    display: block;
+    background-color: white;
+    border-top:1px solid #262626;
+    border-bottom:1px solid #161712;
+    padding:10px 0 10px 0;
+}
+
+div.box label span {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    color:black;
+    font-size:15px;
+    float:left;
+    width:100px;
+    text-align: center;
+    padding:5px 20px 0 0;
+}
+
+div.box .input_text {
+    padding:10px 10px;
+    width:400px;
+    color:black;
+    border: 1px double #171717;
+}
+
+div.box .message{
+    padding:7px 7px;
+    width:400px;
+    background-color: white;
+    border: 1px double #171717;
+    overflow:hidden;
+    height:150px;
+    color: black;
+}
+
+
+div.box .button{
+    margin:0 0 10px 0;
+    padding:5px 7px;
+    background:#94cadc;
+    border:0px;
+    position: relative;
+    color: white;
+    top:20px;
+    width:100px;
+    cursor: pointer;
+    box-shadow: insert 2px 2px 2px black;
+    border-radius: 2px;
+}
+
+div.box .button:hover{
+    opacity: 0.8;
+}
+
+
+
+/* NEWSLETTER */
+.newsletter {
+    width: 100%;
+    float: left;
+    background-color: lightblue;
+    padding: 50px 8%;
+}
+
+.newsletter h3 {
+    font-size: 1.8em;
+    color: white;
+}
+
+.newsletter p {
+    font-size: 1.2em;
+    color: whitesmoke;
+}
+
+.newsletter form {
+    width: 100%;
+    margin-top: 10px;
+    float: left;
+     ;
+}
+
+.newsletter input {
+    width: 20%;
+    margin-right: 1%;
+    padding: 15px 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    background-color: initial;
+    color:white;
+    box-shadow:2px 5px 5px rgb(236, 233, 233)
+}
+.newsletter ::placeholder{
+    color: white;
+}
+.newsletter button{
+    width: 17%;
+    background-color: white;
+    padding: 15px 10px;
+    border-radius: 15px;
+   
+}
+/* RODAPÉ */
+.rodape{
+    width: 100%;
+    float: left;
+    background-color: rgba(13, 13, 236, 0.788);
+    padding-inline-end: 25px 8%;
+    
+}
+.rodape p{
+    color: white;
+}
+
